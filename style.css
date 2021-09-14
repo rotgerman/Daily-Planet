@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital@1&family=Finger+Paint&family=Open+Sans&display=swap');
+
+/* general */
+
+*{
+    padding: 1%;
+    margin: 0;
+    font-family:'Open Sans','Times New Roman', sans-serif;
+}
+
+img{
+    filter: saturate(0%) sepia(20%);
+}
+
+h1{
+    display: none;
+}
+
+h2{
+    font-size: 2.4em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+/* header */
+
+.suscribers{
+    padding: 5%;
+    background-color:rgb(155, 155, 154);
+    color: antiquewhite;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+
+
+header{
+    position: sticky;
+    top: 0%;
+    background-color: rgb(255, 255, 255, 0.5);
+    z-index: 10;
+}
+
+header img{
+    width: 40%;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+}
+
+/* navbar */
+
+ul{
+    text-align: center;
+}
+
+.navlist{
+    display: inline;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    /* el orden en el que pasamos parametros: arriba, derecha, abajo, izquierda. Si hay solo dos: abajo/arriba, izquierda/derecha */
+    padding: 0.5% 2%;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+}
+
+.navlist:hover{
+    background-color: gainsboro;
+}
+
+/* Principal */
+
+.principal{
+    display: flex;
+    padding: 3%;
+    justify-content: space-between;
+}
+
+/* news! */
+
+main{
+    width: 60%;
+}
+
+main .reportername{
+    font-family:sans-serif;
+}
+
+main .photo{
+    max-width: 800px;
+}
+
+main h2{
+    font-size:2.4em;
+}
+
+main .newsContent{
+    display: flex;
+}
+
+main .newsContent p {
+    padding-right: 0 1%;
+    text-align: justify;
+}
+
+/* aside */
+
+aside {
+    width: 30%;
+    border-left: 2px solid black;
+}
+
+aside .ads{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+aside img{
+   width: 90%; 
+}
+
+/*  form*/
+
+.suscribe{
+   margin: auto;
+   border-top: 3px solid black; 
+   background-color: rgb(221, 221, 221);
+   padding: 2% 0 2% 10%;
+   box-shadow: 2px 2px 2px 1px rgb(221, 221, 221, 0.35);
+   margin-bottom: 3%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label.userInfo{
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+}
+
+form input,
+form select{
+    padding: 12px 20px;
+    /* margin: 8px 0; */
+    width: 80%;
+    /* box-sizing: border-box; */
+}
+
+form input[type="radio"]{
+    width: 20%;
+}
+
+form label.userType{
+    width: 50%;
+}
+
+form button{
+    width: 20%;
+    text-align: center;
+    padding: 12px 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(221, 221, 221, 0.35);
+}
+
+/* hacked */
+
+.joker{
+    display: block;
+    filter: saturate(150%) sepia(0%);
+    width: 60%;
+    margin: auto;
+}
+
+p.joker{
+    font-size: 4em;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;
+}
+
+/* media queries */
+@media (max-width: 1024px){
+    main .photo{
+        max-width: 500px;
+    }
+    .navlist{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px){
+    h2{
+        font-size: 2em;
+    }
+
+    .principal{
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+    }
+
+    main .photo{
+        max-width: 600px;
+    }
+
+    aside{
+        width: 100%;
+    
+    border-left: 0;
+    border-top:2% solid black ;
+    margin-top: 2%;
+    }
+
+    aside article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .ads{
+        width: 48%;
+        text-align: justify;
+    }
+
+
+
+    .ads:last-child img{
+        display: none;
+    }
+
+
+}

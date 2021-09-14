@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El sitio del diario Daily Planet, donde Superman no trabaja">
+    <link rel="stylesheet" href="./style.css">
+    <title>Daily Planet</title>
+</head>
+<body>
+    <div class="suscribers">Este es un diario independiente, por favor suscribanse, que el ultimo ataque a Metropolis nos dejo sin plata.</div>
+
+    <header>
+        <img src="./assets/logo.png" alt="logo">
+        <h1>The Daily Planet</h1>
+
+        <nav>
+            <ul>
+                <li class="navlist"><a href="./info.html"> ultimas noticias</a></li>
+                <li class="navlist"><a href="./info.html"> superman</a></li>
+                <li class="navlist"><a href="./info.html"> internacionales</a></li>
+                <li class="navlist"><a href="./info.html"> ecologia</a></li>
+                <li class="navlist"><a href="./info.html"> pronostico del tiempo</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="principal">
+        <main>
+
+            <article>
+                <h2>Superman: de nuevo salva la ciudad</h2>
+                <p class="reporterName">Por Lois Lane</p>
+                <figure><img src="./assets/super.jpg" alt="superman" class="photo">
+                    <figcaption>
+                        Superman posa frente a nuestra oficina.
+                    </figcaption>
+                </figure>
+                
+                <div class="newsContent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusamus voluptate consequuntur animi! Ex, reiciendis quasi. Inventore voluptatum sed itaque debitis fugit temporibus, consequuntur aut explicabo molestias dolore. Molestias, omnis. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusamus voluptate consequuntur animi! Ex, reiciendis quasi. Inventore voluptatum sed itaque debitis fugit temporibus, consequuntur aut explicabo molestias dolore. Molestias, omnis. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusamus voluptate consequuntur animi! Ex, reiciendis quasi. Inventore voluptatum sed itaque debitis fugit temporibus, consequuntur aut explicabo molestias dolore. Molestias, omnis. </p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Todos los enemigos de Superman</h2>
+                <p class="reporterName">Por Jimmy Olsen</p>
+                <figure><img class="photo" src="./assets/enemigos.jpg" alt="enemigos">
+                    <figcaption>
+                        Superman tiene pocos amigos
+                    </figcaption>
+                </figure>
+                
+                <div class="newsContent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempore nisi doloribus, eius rerum repudiandae? Tempora corrupti ut, cupiditate itaque doloremque deleniti animi. Laudantium placeat officiis atque rerum voluptate odit?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempore nisi doloribus, eius rerum repudiandae? Tempora corrupti ut, cupiditate itaque doloremque deleniti animi. Laudantium placeat officiis atque rerum voluptate odit?</p>
+                </div>
+            </article>
+
+        </main>
+
+        <aside>
+            <article>
+                <h2>Seccion publicitaria</h2>
+                <h3>Dia del niño! especial de regalos para chicos</h3>
+                <div class="ads">
+                    <figure>
+                        <img src="./assets/Bat-signal.png" alt="bat-signal">
+                        <figcaption>Para el murcielaguito de la casa!</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./assets/lasso.jpeg" alt="Amazon">
+                        <figcaption>Saca la amazona que hay en vos!</figcaption>
+                    </figure>
+
+                </div>
+                <div class="ads">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolor harum aut atque corrupti facere neque, expedita fuga at provident deleniti pariatur exercitationem consectetur voluptates doloribus quis quasi esse dolorem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolor harum aut atque corrupti facere neque, expedita fuga at provident deleniti pariatur exercitationem consectetur voluptates doloribus quis quasi esse dolorem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolor harum aut atque corrupti facere neque, expedita fuga at provident deleniti pariatur exercitationem consectetur voluptates doloribus quis quasi esse dolorem!</p>
+                <img src="./assets/heroes.jpg" alt="heroes">                 
+            </div>
+        </article>
+
+        </aside>
+    </div>
+
+    <div class="suscribe">
+        <h2>Suscribite para recibir todas las noticias de Metropolis!</h2>
+        <form action="/" method="GET">
+        <h3>Datos de contacto:</h3>
+            <label class="userInfo">Tu nombre:
+                <input type="text" name="suscriberName" placeholder="Clark"required>
+            </label>
+            <label class="userInfo">Tu apellido:
+                <input type="text" name="suscriberLastName" placeholder="Kent"required>
+            </label>
+            <label class="userInfo">Tu email:
+                <input type="text" name="suscriberEmail" placeholder="Notsuperman@gmail.com"required>
+            </label>
+
+            <h3>Ciudad de origen</h3>
+            <select name="city" >
+                <option class="cityText" value="metropolis">metropolis</option>
+                <option class="cityText" value="smallville">smallville</option>
+                <option class="cityText" value="gotham">gotham city</option>
+                <option class="cityText" value="central">central city</option>
+                <option class="cityText" value="fawcett">fawcett city</option>
+                <option class="cityText" value="other">otra</option>
+            </select>
+
+            <h3>Tipo de suscripcion deseada:</h3>
+            <label class="userType">
+                <input type="radio" name="suscriptionType" id="valor1" value="1">Basic
+            </label>
+            <label class="userType">
+                <input type="radio" name="suscriptionType" id="valor2" value="2">Avanced
+            </label>
+            <label class="userType">
+                <input type="radio" name="suscriptionType" id="valor3" value="3" checked>Premium
+            </label>
+
+            <p>Que suscripcion es para mi?
+                <a href="./info.html"><strong>Hace click para mas informacion!</strong></a>
+            </p>
+            <button>Suscribirse!!</button>
+        </form>
+    </div>
+    <footer>
+       <p> Daily planet no es propiedad registrada de Superman &copy; metropolis 1932
+       </p>
+           <p>Hecho por Ger para: <a href="https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap" target="blanck">Nucba </a></p>
+    </footer>
+</body>
+</html>
